@@ -1,0 +1,110 @@
+ 
+.mainbox{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: lightblue;
+}
+
+
+.border {
+    margin: 20px 0;
+    
+}
+
+.container,.item {
+   padding: 10px;
+   background-color: whitesmoke;
+   
+}
+
+.flex {
+	display: flex;
+	box-sizing: border-box;
+   
+}
+
+.row {
+	flex-flow: row wrap;
+    
+}
+
+.col {
+	flex-flow: column wrap;
+    
+}
+
+.item {
+	min-width: 100px;
+}
+
+.content {
+	flex: 1 100%;
+}
+
+.ground {
+	min-height: 280px;
+}
+
+
+.a {
+	flex: 1 40%;
+    background-color: red;
+} 
+
+.b {
+	flex: 1 60%;
+    background-color: orange;
+}
+
+
+.c, .d {
+	flex: 1 50%;
+    background-color: yellow;
+}
+
+.e {
+	flex: 1 80%;
+    background-color: green;
+}
+
+
+.f {
+	flex: 1 50%;
+    background-color: blue;
+}
+
+.g {
+	flex: 1 75%;
+    background-color: indigo;
+}
+
+.h {
+	flex: 1 25%;
+    background-color: violet;
+}
+
+.boxfirst {
+	flex: 1 55%;
+}
+
+.boxsecond {
+	flex: 1 45%;
+}
+
+.boxcd {
+	flex: 1 20%;
+}
+
+.boxgh {
+	flex: 1 50%;
+}
+
+
+
+@media (max-width: 800px) {
+	.boxfirst,.boxsecond,.f,.boxgh{
+		flex: 1 100%;
+		min-height: 480px;
+	}
+}
